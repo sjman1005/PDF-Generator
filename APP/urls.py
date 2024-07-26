@@ -2,8 +2,9 @@ from django.contrib import admin
 from django.urls import path 
   
 # importing views from views..py 
-from .views import home 
+from . import views
   
 urlpatterns = [ 
-    path('',  home), 
+    path('',  views.index, name="index"),
+    path('generate', views.generate, name="generate") 
 ]

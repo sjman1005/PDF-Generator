@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PDF Generator</title>
-    <link rel="stylesheet" href="style.css">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
+
 <body>
     <header>
         <div class="container">
             <h2 class="title">PDF Generator</h2>
-            <img class="logo-img" src="logo.png">
+            <img class="logo-img" src="{% static 'images/logo.png' %}">
         </div>
     </header>
 
@@ -20,7 +23,10 @@
     </div>
 
     <div class="button-section">
-        <button><h1 class="text">Generate your PDF ↓</h1></button>
+        <button>
+            <h1 class="text">Generate your PDF ↓</h1>
+        </button>
     </div>
 </body>
+
 </html>

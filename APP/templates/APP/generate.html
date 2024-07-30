@@ -13,24 +13,58 @@
     <header>
         <div class="container">
             <h2 class="title">PDF Generator</h2>
-            <img class="logo-img" src="{% static 'images/logo.png' %}">
+            <a href="{% url 'index' %}"><img class="logo-img" src="{% static 'images/logo.png' %}"></a>
         </div>
     </header>
 
-    <form method="post">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <div class="file-title">
-            <input class="file-title" name="Title_of_PDF" type="text" placeholder="Title of your PDF">
-            <textarea class="textarea" name="content" placeholder="Write your content" id=""></textarea>
-        </div>
-    
-        <div class="button-section">
-            <button>
-                <h1 class="text">Generate your PDF ↓</h1>
-            </button>
-        </div>
-    </form>
+    <div class="main">
+        <form action="" method="post">
+            {% csrf_token %}
+            <!-- <label for="title">Title: </label><br> -->
+            <input id="title" class="file-title" type="text" name="title" placeholder="Title" style="height: 50px; 
+            width: 700px;
+            margin-left: 450px;
+            font-size: 30px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"><br>
+            <!-- <label for="content">Content: </label><br> -->
+            <textarea class="textarea" id="content" type="text" name="content" placeholder="Content of the PDF"
+            style="height: 300px;
+            width: 700px;
+            margin-left: 450px;
+            margin-top: 30px;
+            font-size: 20px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"></textarea><br>
+            <div>
+                <button style="border: 1px solid rgb(0, 0, 0);
+                border-radius: 3px;
+                width: 300px;
+                height: 70px;
+                display: block;
+                background: linear-gradient(to right, rgb(255, 0, 0) 50%, white 50%);
+                background-size: 200% 100%;
+                background-position: right bottom;
+                transition: all .5s ease-out;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                margin-left: 655px;
+                margin-top: 35px;">
+                    <h1 class="text" style="cursor: pointer;">Generate your PDF ↓</h1>
+                    
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <!-- <div class="file-title">
+        <input class="file-title" type="text" placeholder="Title of your PDF">
+        <textarea class="textarea" placeholder="Write your content" id=""></textarea>
+    </div>
+
+    <div class="button-section">
+        <button>
+            <h1 class="text">Generate your PDF ↓</h1>
+            <h1 class="text">Generate your PDF ↓
+        </button>
+    </div> -->
 </body>
 
 </html>

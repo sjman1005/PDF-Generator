@@ -3,10 +3,10 @@ from django.urls import path
 
 # Importing views from views.py
 from . import views
-from .views import GeneratePdf
+# from .views import GeneratePdf
 
 urlpatterns = [
     path('', views.index, name="index"),
     path('generate', views.generate, name="generate"),
-    path('GeneratePdf/', GeneratePdf.as_view(), name="GeneratePdf"),
+    # path('GeneratePdf/', GeneratePdf.as_view(), name="GeneratePdf"),
 ]

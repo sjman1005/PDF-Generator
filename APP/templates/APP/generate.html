@@ -17,7 +17,18 @@
         </div>
     </header>
 
-    <div class="file-title">
+    <div class="main">
+        <form action="" method="post">
+            {% csrf_token %}
+            <label for="title">Title: </label><br>
+            <input id="title" class="file-title" type="text" name="title"><br>
+            <label for="content">Content: </label><br>
+            <textarea class="textarea" id="content" type="text" name="content"></textarea><br>
+            <input class="button-section" type="submit" value="Generate PDF">
+        </form>
+    </div>
+
+    <!-- <div class="file-title">
         <input class="file-title" type="text" placeholder="Title of your PDF">
         <textarea class="textarea" placeholder="Write your content" id=""></textarea>
     </div>
@@ -25,8 +36,9 @@
     <div class="button-section">
         <button>
             <h1 class="text">Generate your PDF ↓</h1>
+            <h1 class="text">Generate your PDF ↓
         </button>
-    </div>
+    </div> -->
 </body>
 
 </html>

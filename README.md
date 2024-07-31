@@ -63,6 +63,7 @@ This project is a PDF generator built with Python and Django. It enables users t
 ![Text to be Generated](https://github.com/user-attachments/assets/29b1fa30-7700-4726-8d0b-2a7bc8f41ffd)
 
 ![PDF Title](https://github.com/user-attachments/assets/399bcb3f-f988-4fcb-a292-c7eb55177338)
+Generated PDF
 
 
 ## Project Structure

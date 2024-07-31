@@ -1,4 +1,4 @@
-[PDF Title.pdf](https://github.com/user-attachments/files/16436909/PDF.Title.pdf)# PDF Generator using Python-Django
+# PDF Generator using Python-Django
 
 This project is a PDF generator built with Python and Django. It enables users to generate high-quality PDFs from the content they type.
 

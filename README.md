@@ -1,4 +1,4 @@
-# PDF Generator using Python-Django
+[PDF Title.pdf](https://github.com/user-attachments/files/16436909/PDF.Title.pdf)# PDF Generator using Python-Django
 
 This project is a PDF generator built with Python and Django. It enables users to generate high-quality PDFs from the content they type.
 
@@ -54,6 +54,16 @@ This project is a PDF generator built with Python and Django. It enables users t
 2. Click on the link to open the PDF generation form.
 3. Fill in the title and content fields, then submit the form.
 4. If the form is valid, a PDF file will be generated and downloaded automatically.
+
+## Screenshots
+![Home Page](https://github.com/user-attachments/assets/39ee8f81-822f-425f-a7ac-1d64a6a0aed3)
+
+![Generation HTML](https://github.com/user-attachments/assets/90c3d8c5-68c1-4888-98ce-30e798cb7b37)
+
+![Text to be Generated](https://github.com/user-attachments/assets/29b1fa30-7700-4726-8d0b-2a7bc8f41ffd)
+
+![PDF Title](https://github.com/user-attachments/assets/399bcb3f-f988-4fcb-a292-c7eb55177338)
+
 
 ## Project Structure
 
